@@ -1,0 +1,399 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 20, 2020, 10:21:52 PM
+    Author     : ombharti
+*/
+
+
+/*body css*/
+
+body{
+       
+  background-image: url("images/carbg3.jpg");
+   
+}
+
+/*header css*/
+
+#header{
+    positon:fixed;
+    top:0px;
+    left:0px;
+    height:100px;
+    background: rgb(21,147,255);
+    background: linear-gradient(90deg, rgba(21,147,255,1) 0%, rgba(203,187,187,1) 50%, rgba(28,73,149,1) 100%);
+    text-align:center;
+    overflow: hidden;
+    padding:10px; 
+}
+#header a{
+     color:#ff7700;
+    text-decoration: none;
+}
+.logo{
+    height:110px;
+    width:110px;
+    display:block;
+    float:left;
+}
+.name{
+    
+color:white;
+font-size:60px;
+display:block;
+text-align:center;
+}
+
+.logreg{
+    
+    position : absolute;
+     top:40px;
+     right:30px;
+    text-align:right;;
+   display:block;
+        font-size:30px;
+    
+}
+
+
+#nav{
+	position:fixed;
+	top:170px;
+	left:10px;
+	display:block;
+	
+	
+	background-color:#0038a8;
+        color:white;
+	border-radius:10px;
+       
+	width:25%;
+	text-align:center;
+	font-size:34px;
+}
+#nav:hover{cursor:pointer;
+}
+#nav a{
+    color:white;
+    text-decoration: none;
+}
+#home{ 
+        background-color:white;
+	margin-top:50px;
+	margin-left:28%;
+        
+        width:70%;
+      
+        padding:10px;
+        
+}
+
+#home p{
+    font-size:20px;
+    word-spacing:5px;
+   color:#b0b5b8;
+}
+#home h1{
+    text-align:center;
+    color:#32a8a4;
+    font-weight: bold;
+}
+#home h2,th{
+    
+    color:#5ebcff;
+}
+
+#home table{
+    width:100%;
+    text-align: center;
+}
+/* container css which dispaly actual content*/
+
+#container{
+    text-align:center;
+    background:white;
+    width:70%;
+    border:1px solid black;
+    margin:auto;
+    margin-top:5px;
+    padding:20px;
+    box-shadow:3px 3px 3px black;
+}
+
+/*register & login form css*/
+
+.button{
+    color:white;
+    font-size:23px;
+    border-radius:30px;
+    padding-top:15px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:15px;
+    background: rgb(21,147,255);
+    background: linear-gradient(90deg, rgba(21,147,255,1) 0%, rgba(67,231,235,1) 100%);
+}
+.button:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(66,222,100,1) 2%);
+    cursor:pointer;
+}
+
+
+
+#form input,select{
+    margin:8px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid grey;
+    
+    
+}
+
+#form input,select:focus{
+    outline:none;
+    border-bottom:1px solid lightgrey;
+}
+
+#form input:focus::placeholder{
+    color:transparent;
+}
+
+/*profile page css*/
+.heading{
+color:#00918f;    
+}
+
+#data tr:nth-child(odd) {
+     
+            background-color: Lightgreen;        
+      }
+
+#data th{
+          background-color:#81008c;
+          color:white;
+      }
+
+
+#park{
+     width:100%;
+     }    
+#park input{
+        width:auto;
+         margin:8px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid #196F3D;
+        
+    }
+#park input:focus{
+    outline:none;
+    border-bottom:1px solid #196F3D;
+}
+    
+#park input:focus::placeholder{
+    color:transparent;
+}    
+
+
+.park{ 
+  background:#CCF3D2;
+background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(75,233,38,1) 95%);
+    border-radius:2px;
+    border:2px solid #196F3D;
+    border-radius:15px;
+   font-size:18px;
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.park:hover{
+    background:rgb(75,233,38);
+   background:linear-gradient(180deg, rgba(75,233,38,1) 20%, rgba(247,247,247,1) 100%);
+ 
+    }
+
+ #unpark{
+     width:100%;
+     }    
+#unpark input{
+        width:auto;
+         margin:8px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid #ff9500;
+        
+    }
+#unpark input:focus{
+    outline:none;
+    border-bottom:1px solid #ff9500;
+}
+#unpark input:focus::placeholder{
+    color:transparent;
+}    
+
+
+.unpark{ 
+background: rgb(247,247,247);
+background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(255,151,39,1) 80%);
+    border-radius:2px;
+    border:2px solid #ff9500;
+    border-radius:15px;
+   font-size:18px;
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.unpark:hover{
+   background: rgb(255,151,39);
+background: linear-gradient(180deg, rgba(255,151,39,1) 20%, rgba(247,247,247,1) 100%);
+ 
+    }
+    
+    
+    
+#edit{
+     width:100%;
+     
+    }    
+#edit input{
+        width:130px;;
+         margin:8px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid #F7CA00;
+        
+    }
+
+    
+#edit input:focus{
+    outline:none;
+    border-bottom:1px solid #F7CA00;
+}
+#edit input:focus::placeholder{
+    color:transparent;
+}    
+
+
+.edit{ 
+  background: rgb(247,247,247);
+background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(255,192,0,1) 80%);
+    border:2px solid #F7CA00 ;
+    box-shadow:2px 2px 2px grey;
+    border-radius:15px;
+   font-size:18px;
+   color:white;
+   padding-top:10px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom:10px;
+   
+    }
+.edit:hover{
+  background: rgb(241,220,24);
+background: linear-gradient(180deg, rgba(241,220,24,1) 20%, rgba(247,247,247,1) 100%);
+    }
+   
+    
+ #records{
+     width:100%;
+     }    
+#records input{
+        width:auto;
+         margin:8px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid #42a7f5;
+        
+    }
+
+#records input:focus{
+    outline:none;
+    border-bottom:1px solid #42a7f5;
+}
+    
+#records input:focus::placeholder{
+    color:transparent;
+}    
+
+
+
+.search{ 
+ background: rgb(247,247,247);
+background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(24,149,241,1) 80%);
+    border-radius:2px;
+    border:2px solid #42a7f5;
+    border-radius:15px;
+   font-size:18px;
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.search:hover{
+  background: rgb(24,149,241);
+background: linear-gradient(180deg, rgba(24,149,241,1) 20%, rgba(247,247,247,1) 100%);
+ 
+    }
+    
+.logout{
+    color:white;
+    font-size:23px;
+    border-radius:30px;
+    padding-top:15px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:15px;
+     background: rgb(241,49,24);
+background: linear-gradient(180deg, rgba(241,49,24,1) 100%, rgba(247,247,247,1) 100%);
+}
+.logout:hover {
+   background: rgb(252,59,59);
+background: linear-gradient(180deg, rgba(252,59,59,1) 20%, rgba(247,247,247,1) 100%);
+    cursor:pointer;
+}    
+    
+    
+    
+ /* date css */
+ [type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2020, 10:33:17 PM
+    Author     : ombharti
+*/
+

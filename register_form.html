@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Register</title>
+        <link rel="stylesheet" href="style1.css" type="text/css">
+    </head>
+    <body>
+         <div id="header">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <h1 class="name"><span style="color:#2cfc03;">P</span>ark <span style="color:#fce303;">S</span>mart</h1>
+            
+        </div>
+        
+        <div id="container">
+            
+            
+            <div id="form">
+                <form action="register_process" method="post">
+                <h1>Register</h1>
+                <br>
+                <input class="user_name" type="text" name="username" placeholder="User Name*" required><br><br>
+                <input class="email" type="email" name="useremail" placeholder="Email*" required><br><br>
+                <input class="user_no" type="text" name="userno" placeholder="Mob No*" required><br><br>
+                <input class="building_name" type="text" name="buildingname" placeholder="Building Name*" required><br><br>
+                <input class="address" type="text" name="address" placeholder="Full Building Address*" required><br><br>
+                <select class="state" name="state" style="width:180px;" required>
+                 <option>Select state</option>
+                 <option value="gujarat">Gujarat</option>
+                 <option value="rajasthan">Rajasthan</option>
+                 <option value="maharashtra">Maharashtra</option>
+                 <option value="punajab">Punjab</option>
+                </select><br><br>
+
+                <input id="password" type="password" name="password" placeholder="Password*" required  pattern="(?=.*\d)(?=.*[!@#$%^&*()_+])(?=.*[a-z]).{6,}" title="password must contain at least 6 characters including lowercase,number& one special character "><br><br>
+                <input id="cpassword" type="text" name="cpassword" placeholder="Confirm Password*"      required><br><br>
+                  <script>
+                             var password = document.getElementById("password")
+                            , cpassword = document.getElementById("cpassword");
+                            
+                             function validatePassword(){
+                             if(password.value != cpassword.value) {
+                             cpassword.setCustomValidity("Passwords Don't Match");
+                                         } else {
+                                                cpassword.setCustomValidity('');
+                             }
+                            }
+
+                            password.onchange = validatePassword;
+                            cpassword.onkeyup = validatePassword;  
+                    
+                  </script>
+                
+                
+                
+                <input class="button" type="submit" value="Register"> 
+                <br>
+                </form>
+                  <p style="font-size:17px;">Already have an account? <a href="login_form"> Login</a></p>
+            </div>
+        </div>
+        
+          
+    </body>
+</html>
+
